@@ -1,4 +1,10 @@
-﻿using System.Text.Json.Serialization;
+﻿/*
+    File: DemoRequestData.cs
+    Author: Donnie Wishard
+    Date: January 23, 2024
+    Description: This class hold data related to a Demo Data Reqest.
+*/
+using System.Text.Json.Serialization;
 
 namespace ActionFilterApi.Classes
 {

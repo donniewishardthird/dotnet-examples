@@ -1,4 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc.Controllers;
+﻿/*
+    File: ApiLogActionFilter.cs
+    Author: Donnie Wishard
+    Date: January 23, 2024
+    Description: This code contains overrides for IActionFilter where we handle intercetping requests and responses.  
+*/
+using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
@@ -16,8 +22,7 @@ namespace ActionFilterApi.Filters
         /// Constructor, the DB Context is commented out, enter your details in place and uncomment to have access to your database.
         /// </summary>
         /// <param name="dbContext"></param>
-        public ApiLogActionFilter(/*IDbContextFactory<YourDbContext> dbContext,*/
-            ILogger<ApiLogActionFilter> logger)
+        public ApiLogActionFilter(/*IDbContextFactory<YourDbContext> dbContext,*/ ILogger<ApiLogActionFilter> logger)
         {
             _logger = logger;
             //_dbFactory = dbContext;
